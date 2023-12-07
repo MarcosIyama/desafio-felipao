@@ -1,6 +1,6 @@
 let heroName = "Cavaleiro que diz Ni"
 
-let heroXP = 95000
+let heroXP = 100000
 
 let heroLevel = "noob"
 
@@ -24,5 +24,19 @@ if(heroXP <= 1000){
 }
 
 
-
-console.log("Olá, " + heroName + ", você está no nível " + heroLevel)
+switch (heroLevel) {
+    case "Ferro":
+        console.log("Seja bem vindo a jornada " + heroName + ", no momento você está no nível " + heroLevel + ".");
+        break;
+    case "Ascendente":
+        console.log("Olá, " + heroName + ", vejo que você está no nível " + heroLevel + " e já é quase um Imortal.");
+        break;
+    case "Imortal":
+        console.log("Muito bem " + heroName + ", percebo que você já está no nível " + heroLevel + " e agora nada mais pode te parar.");
+        break;
+    case "Radiante":
+        console.log("Parabéns " + heroName + ", você chegou ao nível " + heroLevel + " e já pode se considerar um herói lendário.");
+        break;
+    default:
+        console.log("Olá, " + heroName + ", no momento você está no nível " + heroLevel + ".");
+}
